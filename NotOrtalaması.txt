@@ -1,0 +1,24 @@
+public class Main {
+    public static void main(String[] args) {
+
+    int turkce,matematik,fenBilgisi,sosyalBilgisi,bedenEgitimi;
+    double ortalama=0;
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Türkçe notunu giriniz:");
+        turkce= scan.nextInt();
+        System.out.println("Matematik notunu giriniz:");
+        matematik=scan.nextInt();
+        System.out.println("Fen bilgisi notunu giriniz:");
+        fenBilgisi= scan.nextInt();
+        System.out.println("Sosyal bilgiler notunu giriniz:");
+        sosyalBilgisi=scan.nextInt();
+        System.out.println("Beden eğitimi notunu giriniz:" );
+        bedenEgitimi= scan.nextInt();
+        ortalama=(turkce+matematik+sosyalBilgisi+fenBilgisi+bedenEgitimi)/5;
+        System.out.println("ortalama:" +ortalama);
+
+
+
+
+        }
+    }
