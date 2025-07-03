@@ -1,0 +1,10 @@
+public class Main {
+    public static void main(String[] args) {
+        // kdv hesaplama
+        double tutar,kdvliFiyat,kdv;
+        Scanner input=new Scanner(System.in);
+        System.out.println("Ürünün Tutarını Giriniz:");
+        tutar= input.nextDouble();
+        kdv=0.18;
+        kdvliFiyat= tutar+(tutar*kdv);
+        System.out.println("Kdvli Fiyat:"+kdvliFiyat);
