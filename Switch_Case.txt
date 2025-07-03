@@ -1,0 +1,26 @@
+
+public class Main {
+    public static void main(String[] args) {
+       // Switch case yapısı bizi bir çok if else yapısı yazmaktak
+        // kurtararak kodun daha anlaşılır olmasını sağlar.
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Bir sayı giriniz:");
+        int sayi= scan.nextInt();
+        switch (sayi){
+
+            case 1:
+                System.out.println("sayı 1 e eşittir:");
+                break;
+            case 2:
+                System.out.println("Sayı ikiye eşittir:");
+                break;
+            case 3:
+                System.out.println("Sayı üçe eşittir:");
+                break;
+            default:
+                System.out.println("Geçersiz bir sayı girdiniz:");
+
+        }
+
+    }
+}
