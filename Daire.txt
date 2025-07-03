@@ -1,0 +1,13 @@
+
+public class Main {
+    public static void main(String[] args) {
+        // dairenin alanını ve çevresini bulma
+        int r;
+        double cevre,alan,PI=3.14;
+        Scanner input=new Scanner(System.in);
+        System.out.println("yarıçap değerini giriniz:");
+        r=input.nextInt();
+        alan=(r*r)*PI;
+        cevre=2*PI*r;
+        System.out.println("Dairenin alanı:"+alan);
+        System.out.println("Dairenin çevresi:"+cevre);
