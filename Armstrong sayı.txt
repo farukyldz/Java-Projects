@@ -1,0 +1,30 @@
+public class Main {
+    public static void main(String[] args) {
+        int temp,birler,onlar,yuzler,toplam;
+        for (int i=100;i<999;i++){
+            temp=i;
+         //123
+           birler=temp%10;
+          temp=temp/10;
+
+           onlar=temp%10;
+          temp=temp/10;
+
+          yuzler=temp%10;
+          temp=temp/10;
+
+
+        toplam=(birler*birler*birler)+(onlar*onlar*onlar)+(yuzler*yuzler*yuzler);
+           if (i==toplam){
+               System.out.println(i+ "armstrong sayıdır.");
+           }
+
+
+
+
+
+
+        }
+
+    }
+}
