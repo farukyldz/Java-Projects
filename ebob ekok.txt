@@ -1,0 +1,27 @@
+
+public class Main {
+    public static void main(String[] args) {
+     //ebob ekok
+     //ekok=(s1*s2)/ebob
+
+     Scanner scan=new Scanner(System.in);
+     int s1,s2,ebob=1,ekok;
+        System.out.print("Lütfen sayıları giriniz:");
+       s1= scan.nextInt();
+       s2=scan.nextInt();
+
+     int kucukSayi=Math.min(s1,s2);
+
+        for (int i = kucukSayi; i>0 ; i--) {
+            if ((s1%i==0 && s2%i==0)){
+                ebob=i;
+                break;
+
+            }
+        }
+        ekok=(s1*s2)/ebob;
+        System.out.println(ekok);
+        System.out.println(ebob);
+
+    }
+}
