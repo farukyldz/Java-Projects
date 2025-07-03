@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //üç basamaklı girilen sayıların karelerinin toplamını bulan java kodu
+        Scanner scan=new Scanner(System.in);
+        System.out.print("üç basamaklı bir sayı girin:");
+        int ucBasamakliSayi= scan.nextInt();
+        if(ucBasamakliSayi>=100 && ucBasamakliSayi<=999) {
+            int birlerBasamagi = ucBasamakliSayi % 10;
+            int onlarBasamagi = (ucBasamakliSayi / 10) % 10;
+            int yuzlerBasamagi = ucBasamakliSayi / 100;
+            int toplam=birlerBasamagi*birlerBasamagi+onlarBasamagi*onlarBasamagi+yuzlerBasamagi*yuzlerBasamagi;
+
+
+
+
+
+            int birlerinKaresi = birlerBasamagi * birlerBasamagi;
+            int onlarinKaresi = onlarBasamagi * onlarBasamagi;
+            int yuzlerinKaresi = yuzlerBasamagi * yuzlerBasamagi;
+
+
+            System.out.println("Birler basamağının karesi: " + birlerinKaresi);
+            System.out.println("Onlar basamağının karesi: " + onlarinKaresi);
+            System.out.println("Yüzler basamağının karesi: " + yuzlerinKaresi);
+            System.out.println("Girilen sayıların kareleri toplamı: "+toplam);
+
+
+
+        }else {
+            System.out.println("Girdiğiniz sayı üç basamaklı değil");
+
+
+        }
+
+
+
+        }
+    }
