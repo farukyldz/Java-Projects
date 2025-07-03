@@ -1,0 +1,22 @@
+
+public class Main {
+    public static void main(String[] args) {
+//kullanıcı adı ve parola sorgulama
+       Scanner scan=new Scanner(System.in);
+       String k_adi,parola;
+        System.out.println("Kullanıcı adını giriniz:");
+        k_adi=scan.nextLine();
+        System.out.println("Parolayı giriniz:");
+        parola=scan.nextLine();
+        if (k_adi.equals("ömer faruk") && parola.equals("5848")) {
+            System.out.println("Başarılı bir şekilde giriş yaptınız:");
+
+
+        }else {
+            System.out.println("Kullanıcı adınız veya şifreniz yanlış");
+        }
+
+
+
+    }
+    }
