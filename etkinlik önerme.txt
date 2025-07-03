@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your c
+public class Main {
+    public static void main(String[] args) {
+        //hava sıcaklığını al
+        //sıcaklık 30 veya daha yüksekse yüzmeyi öner
+        //5 ve 30 arasında ise sinemeyayı öner
+        //4 ve daha az ise kayak yapmayı öner
+
+
+        Scanner scan=new Scanner(System.in);
+        int sicaklik;
+        System.out.println("Hava sıcaklığını giriniz:");
+        sicaklik=scan.nextInt();
+
+        if (sicaklik>=30) {
+            System.out.println("Yüzmeye gitmeyi öneririm.");
+        } else if (sicaklik>=5 && sicaklik<30) {
+            System.out.println("Sinemaya gitmenizi öneririm. ");
+        } else {
+
+            System.out.println("kayak yapmayı öneririm.");
+
+
+        }
+
+    }
+    }
