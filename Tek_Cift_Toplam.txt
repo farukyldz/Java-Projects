@@ -1,0 +1,25 @@
+
+public class Main {
+    public static void main(String[] args) {
+        //1 den 90 a kadar olan sayıların tek toplam ve çift toplamını yazma
+        int altSinir = 1;
+        int ustSinir = 90;
+        int tekToplam = 0;
+        int ciftToplam = 0;
+        for (int sayi = altSinir; sayi <= ustSinir; sayi++) {
+            if (sayi % 2 == 0) {
+                ciftToplam += sayi;
+
+
+            } else {
+                tekToplam+=sayi;
+
+            }
+
+
+        }
+        System.out.println("Tek sayıların toplamı:"+tekToplam);
+        System.out.println("çift sayıların toplamı:"+ciftToplam);
+        
+    }
+}
