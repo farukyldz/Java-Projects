@@ -1,0 +1,13 @@
+
+public class Main {
+    public static void main(String[] args) {
+        // Calculating the area and circumference of a circle
+        int r;
+        double circumference,area,PI=3.14;
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter the radius:");
+        r=input.nextInt();
+        area=(r*r)*PI;
+        circumference=2*PI*r;
+        System.out.println("the area of the circle:"+area);
+        System.out.println("circumference of the circle:"+circumference);
