@@ -3,11 +3,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
         int input;
-        System.out.println("Lütfen bir sayı giriniz:");
+        System.out.println("Please enter a number:");
         input= scan.nextInt();
 
         if (input<=1){
-            System.out.println("Girilen sayı asal değildir");
+            System.out.println("The number entered is not a prime number");
         }else{
             boolean isPrime=true;
             for (int i=2;i<input;i++){
@@ -18,9 +18,9 @@ public class Main {
                 }
             }
             if (isPrime){
-                System.out.println("Girilen sayı asaldır:");
+                System.out.println("The number entered is prime:");
             }else {
-                System.out.println("Girilen sayı asal değildir:");
+                System.out.println("The number entered is not a prime number:");
             }
         }
 
