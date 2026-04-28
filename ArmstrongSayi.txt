@@ -1,30 +1,27 @@
 public class Main {
     public static void main(String[] args) {
-        int temp,birler,onlar,yuzler,toplam;
-        for (int i=100;i<999;i++){
-            temp=i;
-         //123
-           birler=temp%10;
-          temp=temp/10;
+        int temp, units, tens, hundreds, sum;
 
-           onlar=temp%10;
-          temp=temp/10;
+        // Loop through all 3-digit numbers
+        for (int i = 100; i <= 999; i++) {
+            temp = i;
 
-          yuzler=temp%10;
-          temp=temp/10;
+            // Extract the digits
+            units = temp % 10;      // Digit in the 1s place
+            temp = temp / 10;
 
+            tens = temp % 10;       // Digit in the 10s place
+            temp = temp / 10;
 
-        toplam=(birler*birler*birler)+(onlar*onlar*onlar)+(yuzler*yuzler*yuzler);
-           if (i==toplam){
-               System.out.println(i+ "armstrong sayıdır.");
-           }
+            hundreds = temp % 10;   // Digit in the 100s place
 
+            // Calculate the sum of the cubes of its digits
+            sum = (units * units * units) + (tens * tens * tens) + (hundreds * hundreds * hundreds);
 
-
-
-
-
+            // Check if the number is an Armstrong number
+            if (i == sum) {
+                System.out.println(i + " is an Armstrong number.");
+            }
         }
-
     }
 }
