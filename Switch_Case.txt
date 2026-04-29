@@ -1,24 +1,24 @@
 
 public class Main {
     public static void main(String[] args) {
-       // Switch case yapısı bizi bir çok if else yapısı yazmaktak
-        // kurtararak kodun daha anlaşılır olmasını sağlar.
+       // The switch-case structure allows us to write multiple if-else statements
+        // and makes the code easier to understand.
         Scanner scan=new Scanner(System.in);
-        System.out.print("Bir sayı giriniz:");
-        int sayi= scan.nextInt();
-        switch (sayi){
+        System.out.print("Please enter a number:");
+        int num= scan.nextInt();
+        switch (num){
 
             case 1:
-                System.out.println("sayı 1 e eşittir:");
+                System.out.println("is equal to 1:");
                 break;
             case 2:
-                System.out.println("Sayı ikiye eşittir:");
+                System.out.println("is equal to 2:");
                 break;
             case 3:
-                System.out.println("Sayı üçe eşittir:");
+                System.out.println("is equal to 3:");
                 break;
             default:
-                System.out.println("Geçersiz bir sayı girdiniz:");
+                System.out.println("You have entered an invalid number:");
 
         }
 
