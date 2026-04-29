@@ -1,21 +1,21 @@
 public class Main {
     public static void main(String[] args) {
 
-    int turkce,matematik,fenBilgisi,sosyalBilgisi,bedenEgitimi;
-    double ortalama=0;
+    int turkish,mathematics,science,social_studies,physical_education;
+    double average=0;
         Scanner scan=new Scanner(System.in);
-        System.out.println("Türkçe notunu giriniz:");
-        turkce= scan.nextInt();
-        System.out.println("Matematik notunu giriniz:");
-        matematik=scan.nextInt();
-        System.out.println("Fen bilgisi notunu giriniz:");
-        fenBilgisi= scan.nextInt();
-        System.out.println("Sosyal bilgiler notunu giriniz:");
-        sosyalBilgisi=scan.nextInt();
-        System.out.println("Beden eğitimi notunu giriniz:" );
-        bedenEgitimi= scan.nextInt();
-        ortalama=(turkce+matematik+sosyalBilgisi+fenBilgisi+bedenEgitimi)/5;
-        System.out.println("ortalama:" +ortalama);
+        System.out.println("Please enter your Turkish mark:");
+        turkish= scan.nextInt();
+        System.out.println("Please enter your maths mark:");
+        mathematics=scan.nextInt();
+        System.out.println("Please enter your science mark:");
+        science= scan.nextInt();
+        System.out.println("Please enter your social studies mark:");
+        social_studies=scan.nextInt();
+        System.out.println("Please enter your PE mark:" );
+        physical_education=scan.nextInt();
+        average=(turkish+mathematics+science+social_studies+physical_education)/5;
+        System.out.println("average:" +average);
 
 
 
