@@ -1,27 +1,27 @@
 
 public class Main {
     public static void main(String[] args) {
-     //ebob ekok
-     //ekok=(s1*s2)/ebob
+     //GCD: Greatest Common Divisor,LCM: Least Common Multiple
+     //lcm=(s1*s2)/gcd
 
      Scanner scan=new Scanner(System.in);
-     int s1,s2,ebob=1,ekok;
-        System.out.print("Lütfen sayıları giriniz:");
+     int s1,s2,ebob=1,lcm;
+        System.out.print("Please enter the numbers:");
        s1= scan.nextInt();
        s2=scan.nextInt();
 
-     int kucukSayi=Math.min(s1,s2);
+     int small_number=Math.min(s1,s2);
 
-        for (int i = kucukSayi; i>0 ; i--) {
+        for (int i = small_number; i>0 ; i--) {
             if ((s1%i==0 && s2%i==0)){
-                ebob=i;
+                gcd=i;
                 break;
 
             }
         }
-        ekok=(s1*s2)/ebob;
-        System.out.println(ekok);
-        System.out.println(ebob);
+        lcm=(s1*s2)/gcd;
+        System.out.println(lcm);
+        System.out.println(gcd);
 
     }
 }
