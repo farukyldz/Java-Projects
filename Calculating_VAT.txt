@@ -1,0 +1,10 @@
+public class Main {
+    public static void main(String[] args) {
+        // Calculating VAT
+        double price,VAT_Inclusive,VAT;
+        Scanner input=new Scanner(System.in);
+        System.out.println("Please enter the product price:");
+        tutar= input.nextDouble();
+        VAT=0.18;
+        VAT_Inclusive= price+(price*VAT);
+        System.out.println("VAT Inclusive:"+VAT_Inclusive);
