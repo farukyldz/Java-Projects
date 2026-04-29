@@ -1,0 +1,25 @@
+
+public class Main {
+    public static void main(String[] args) {
+        //Write down the sum of the odd numbers and the sum of the even numbers from 1 to 90
+        int lower_limit = 1;
+        int upper_limit = 90;
+        int odd_total = 0;
+        int even_total = 0;
+        for (int num = lower_limit; num <= upper_limit; num++) {
+            if (num % 2 == 0) {
+                even_total += num;
+
+
+            } else {
+                odd_total+=num;
+
+            }
+
+
+        }
+        System.out.println("The sum of the odd numbers:"+odd_total);
+        System.out.println("the sum of even numbers:"+even_total);
+        
+    }
+}
