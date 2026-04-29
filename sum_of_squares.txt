@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //Java code to calculate the sum of the squares of three-digit numbers
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter a three-digit number:");
+        int threeDigitNumber= scan.nextInt();
+        if(threeDigitNumber>=100 && threeDigitNumber<=999) {
+            int ones place = threeDigitNumber % 10;
+            int The Tens Place = (threeDigitNumber / 10) % 10;
+            int the hundreds place = threeDigitNumber / 100;
+            int total=ones place*ones place+The Tens Place*The Tens Place+the hundreds place*the hundreds place;
+
+
+
+
+
+            int square_of_ones = ones_place * ones_place;
+            int square_of_tens = The_Tens_Place * The_Tens_Place;
+            int square_hundreds = the_hundreds_place * the_hundreds_place;
+
+
+            System.out.println("the square of the ones digit: " + square_of_ones);
+            System.out.println("the square of the tens digit: " + square_of_tens);
+            System.out.println("the square of the hundreds digit: " + square_hundreds);
+            System.out.println("The sum of the squares of the numbers entered: "+total);
+
+
+
+        }else {
+            System.out.println("The number you entered is not three digits long");
+
+
+        }
+
+
+
+        }
+    }
