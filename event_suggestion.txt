@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        //Get the air temperature
+        //If the temperature is 30 or higher, recommend swimming
+        //If it is between 5 and 30, recommend cycling
+        //If it is 4 or lower, recommend skiing
+
+
+        Scanner scan=new Scanner(System.in);
+        int temperature;
+        System.out.println("Please enter the air temperature:");
+        temperature=scan.nextInt();
+
+        if (temperature>=30) {
+            System.out.println("I suggest you go for a swim.");
+        } else if (temperature>=5 && temperature<30) {
+            System.out.println("I recommend you go to the cinema. ");
+        } else {
+
+            System.out.println("I recommend going skiing.");
+
+
+        }
+
+    }
+    }
